@@ -17,27 +17,7 @@ def app_run():
     Run App
     
     """
-    components.html("<head>
-  <meta charset="UTF-8">
-  <title>Login to RealEstate</title>
-
-	<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-	<!--
-	  var config = {
-	    apiKey: "AIzaSyA1rRG77hpoYS3i6moo900KD8GR1wQ5Kh8",
-	    authDomain: "okcredit-7535e.firebaseapp.com",
-	    databaseURL: "https://okcredit-7535e.firebaseio.com",
-	    projectId: "okcredit-7535e",
-	    storageBucket: "okcredit-7535e.appspot.com",
-	    messagingSenderId: "870984863712"
-	  };
-	  firebase.initializeApp(config);
-	--> <script> var config = {
-apiKey: "AIzaSyCleAdT5AyqQR8LDibRw6874LxogcpTUks",
-  authDomain: "realestate-34d31.firebaseapp.com",
-  projectId: "realestate-34d31",
-  storageBucket: "realestate-34d31.appspot.com",
-  messagingSenderId: "552651165843",
+    components.html("<head><title>Login to RealEstate</title><script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script><script> var config = {apiKey: "AIzaSyCleAdT5AyqQR8LDibRw6874LxogcpTUks",authDomain:"realestate-34d31.firebaseapp.com",  projectId: "realestate-34d31",storageBucket: "realestate-34d31.appspot.com",messagingSenderId: "552651165843",
   appId: "1:552651165843:web:86367251ac1547fdd77d66",
   measurementId: "G-98EG4HWFGX"
 };
