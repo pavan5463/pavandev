@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<HTML>
+<HEAD>
+  <meta charset="UTF-8">
+<TITLE>
+RealEstate
+</TITLE>
+<style>
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+</style>
+</HEAD>
+<BODY  style="background-image: url('/static/image7.jpg');color:brown; height:100%;background-repeat:no-repeat;background-size:100% 140%;>
+<H1 STYLE="background-color: orange;color:orange";>
+<a ALIGN="right"style="text-decoration:none" href="/filedata"><h1>RAILGURU PROTOTYPE WEB MODEL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1></a>
+</form>
+</H1>
+<BR>
+<BR>
+<BR>
+<div >
+
+<form action="/predict" method="post">
+
+CITY
+<H3 align = "center" STYLE="COLOR:darkblue">
+<label for="cars" STYLE="COLOR:darkblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select Source</label>
+<select name="city" id="cars" required>
+                    <option value="" selected="selected">Choose City</option>
+                    <option value="Suryapet">Suryapet</option>
+                  <option value="warangal">Warangal</option>                                                              
+ </select>       </h3>   
+
+
+
+STATUS
+<H3 align = "center" STYLE="COLOR:darkblue">
+<br>
+<label for="cars0" STYLE="COLOR:darkblue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Select Destination</label>
+<select name="type" id="cars0" required>                                                                                      
+ <option value="" selected="selected">Choose Property Type</option>
+ <option value="renew">Renew</option>                                                                                    
+ <option value="good">Good</option>
+ <option value="newdevelopment">New Construction</option>
+</select></h3>
+<br>
+
+SIZE
+<h3 align ="center" style="color:darkblue">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter Date
+<input placeholder="Space" name="size"  required>
+</h3 >
+
+ROOMS
+<label for="vol">Volume (between 0 and 50):</label>
+<input type="range" id="vol" name="room" min="1" max="10">
+<input type="submit">
+
+BATHROOMS
+<label for="vol">Volume (between 0 and 50):</label>
+<input type="range" id="vol" name="bathroom" min="1" max="10">
+<input type="submit">
+
+Area
+<h3 align ="center" style="color:darkblue">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enter Date
+<input placeholder="Space" name="space"  required>
+Space Area
+</h3 >
+
+
+
+<br>
+<h4 align = "center">
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <button type="submit" class="btn-large waves-effect waves-light orange">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Predit Cost</button>
+</form>
+
+<br>
+
+</div>
+
+</body>
+</html>
