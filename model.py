@@ -641,3 +641,4 @@ class Model():
             bathroomsCat = bathrooms
 
         return bathroomsCat
+pickle.dump(Model, open('model.pkl','wb'))
