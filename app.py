@@ -1,9 +1,16 @@
 import streamlit as st
 import math
+import numpy as np
+from flask import Flask, request, jsonify, render_template
 from model import Model
 
 
-def app_run():
+app = Flask(__name__)
+@app.route('/')
+def home():
+    return render_template('login.html')
+@app.route('/realapp')
+def realapp():
     """
     Returns
     -------
@@ -28,7 +35,7 @@ def app_run():
             groupby('district').mean()['parkingSpacePrice'])
     
     #Title & Header Image
-    st.title('Evaluate your home in Hyderabad')
+    st.title('Evaluate your home in Telangana')
     
     st.subheader("Discover the market value of your home convenient and easy with one click")
     
@@ -41,7 +48,7 @@ def app_run():
     st.subheader("Set the property parameters")
     
     #City
-    city = st.selectbox('City',['Warangal','SURYAPET'],index = 0)
+    city = st.selectbox('City',['Warangal','Suryapet'],index = 0)
     
     selector_city = 'wG - '
     
@@ -156,17 +163,17 @@ def app_run():
         value = int(math.ceil((value_model ) / 5000.0) * 5000.0)
         
         st.write("Market value")
-        st.write("{:,.0f}₹".format(value))
+        st.write("₹{:,.0f}".format(value))
         
         if parking_space > 0:
             
             st.write("Average price  %s - %s " % (city,district))
-            st.write("{:,.0f}₹".format(parking_space))
+            st.write("₹{:,.0f}".format(parking_space))
         
         
         
     
 if __name__ == "__main__":
-    
-    app_run()
+    app.run(host="0.0.0.0",port=6442)
+    #app_run()
     
