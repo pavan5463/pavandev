@@ -17,55 +17,9 @@ def app_run():
     Run App
     
     """
-    components.html("<head><title>Login to RealEstate</title><script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script><script> var config = {apiKey: "AIzaSyCleAdT5AyqQR8LDibRw6874LxogcpTUks",authDomain:"realestate-34d31.firebaseapp.com",  projectId: "realestate-34d31",storageBucket: "realestate-34d31.appspot.com",messagingSenderId: "552651165843",
-  appId: "1:552651165843:web:86367251ac1547fdd77d66",
-  measurementId: "G-98EG4HWFGX"
-};
- firebase.initializeApp(config);
-</script>
-
-  <script src="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.3.0/firebaseui.css" />
-  <!--<link href="style.css" rel="stylesheet" type="text/css" media="screen" />-->
-<link href="/static/style.css" rel="stylesheet" type="text/css" media="screen" />
-
-</head>
-<body style = "background-color:#6f70a6">
-    <div id="container">
-	    <h1><u>Login To RealEstate</u></h1>
-      <div id="loading">Loading...</div>
-      <div id="loaded" class="hidden">
-        <div id="main">
-          <div id="user-signed-in" class="hidden">
-            <div id="user-info">
-              <div id="phone">
-
-</div>
-              <div class="clearfix"></div>
-            </div>
-            <p>
-              <button id="sign-out">Sign Out</button>
-
-   </a>         </p>
-	      <form action="/realapp" class="hidden">
- <button type="submit" class="btn-large waves-effect waves-light orange">Proceed to Webapp</button>
-</form>
-          </div>
-          <div id="user-signed-out" class="hidden">
-            <div id="firebaseui-spa">
-              <h3>App:</h3>
-              <div id="firebaseui-container"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="/static/app.js"></script>
-</body>")
+    
     #load Module class
-    # Create a text element and let the reader know the data is loading.
-                    
-def realapp():                    
+    # Create a text element and let the reader know the data is loading.                 
     with st.spinner(text='In progress'):
     #data_load_state = st.text('Loading data & model...')
     # Notify the reader that the data was successfully loaded.
