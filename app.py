@@ -5,11 +5,10 @@ from flask import Flask, request, jsonify, render_template
 from model import Model
 
 
-app = Flask(__name__)
-@app.route('/')
+
 def home():
     return render_template('login.html')
-@app.route('/realapp')
+
 def realapp():
     """
     Returns
@@ -174,6 +173,7 @@ def realapp():
         
     
 if __name__ == "__main__":
-    app.run()
+    #app.run()
     #app_run()
+    home()
     
