@@ -46,7 +46,7 @@ def predicts():
   size=request.form['size']
   rooms=request.form['room']
   bathrooms=request.form['bathroom']
-  status=request.form['status']
+  statusOutput=request.form['status']
   
   #parking_price_df =(df.loc[df['parkingSpacePrice']>1000].groupby('district').mean()['parkingSpacePrice'])
   
